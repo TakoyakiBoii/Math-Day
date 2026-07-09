@@ -1,0 +1,28 @@
+body {
+	background-color: white;
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-size: 10% 30%;
+}
+
+.content {
+    text-align: center;
+    color: white;
+    background-color: #b60f0f;
+    min-width: 20%;
+    max-width: 60%;
+	height: auto;
+    margin: auto;
+    
+    /* Border */
+	border-style: solid;
+	border-width: 10%;
+	border-color: #0fdf27;
+	border-radius: 2%;
+}
+
+.wipimg {
+	min-width: 20%;
+	max-width: 50%;
+	height: auto;
+}
