@@ -1,8 +1,8 @@
 body {
-	background-color: white;
+	background-image: url('https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/Background.png');
 	background-repeat: repeat;
 	background-attachment: fixed;
-	background-size: 10% 30%;
+	background-size: 25% auto;
 }
 
 .content {
@@ -10,19 +10,19 @@ body {
     color: white;
     background-color: #b60f0f;
     min-width: 65%;
-    max-width: 80%;
+    max-width: 65%;
 	height: auto;
     margin: auto;
     
     /* Border */
 	border-style: solid;
 	border-width: 10%;
-	border-color: #0fdf27;
+	border-color: #099f1b;
 	border-radius: 2%;
 }
 
 .tab-buttons {
-	margin-left: 20%;
+	margin-left: 17.5%;
 }
 
 .tab {
@@ -43,7 +43,7 @@ body {
 }
 
 .wipimg {
-	min-width: 20%;
+	min-width: 30%;
 	max-width: 50%;
 	height: auto;
 }
