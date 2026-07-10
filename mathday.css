@@ -9,10 +9,49 @@ body {
 	background-size: 25% auto;
 }
 
+::selection {
+	background-color: #099f1b;
+	color: white;
+}
+
+h1 {
+	font-family: "Roboto Mono", monospace;
+}
+
+h2 {
+	font-family: "Roboto Mono", monospace;
+}
+
+h3 {
+	font-family: "Roboto Mono", monospace;
+}
+
+p {
+	font-family: "Roboto Mono", monospace;
+}
+
+a {
+	cursor: url("https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/SmallerPointerCursor.png"), pointer;
+	color: #099f1b;
+	font-weight: bold;
+}
+
+a:visited {
+	color: #00ac5f
+}
+
+a:hover {
+	color: #3aed4f
+}
+
+a:active {
+	color: #ffffff
+}
+
 .content {
     text-align: center;
     color: white;
-    background-color: #b60f0f;
+    background-color: #900D09;
     min-width: 65%;
     max-width: 65%;
 	height: auto;
@@ -41,7 +80,7 @@ button {
 
 .scroll-arrow {
 	position: absolute;
-	background-color: #b60f0f;
+	background-color: #900D09;
 	color: #0fdf27;
 	height: 35px;
 	width: 35px;
@@ -84,7 +123,7 @@ button {
 	font-size: clamp(15px, 2.5vw + 10px, 20px);
     text-align: center;
     color: white;
-    background-color: #b60f0f;
+    background-color: #900D09;
 	width: 100%;
 	max-width: 200px;
 	min-width: 0;
