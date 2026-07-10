@@ -9,16 +9,22 @@
     </head>
     <body>
         <!-- Button Tabs -->
-        <div class="tab-buttons">
-            <button class="tab" onclick="openTab('about')"> <b> About Us! </b> </button>
-            <button class="tab" onclick="openTab('stats')"> <b> Global Stats </b> </button>
-            <button class="tab" onclick="openTab('meet')"> <b> Meet the Mascots </b></button>
+        <div class="nav-container">
+            <div class="tab-buttons">
+                    <button class="scroll-arrow left" onclick="cycleTab(-1)">&#10094;</button>
+                        <button class="tabLink active" onclick="openTab(event, 'about')"> About Us! </button>
+                        <button class="tabLink" onclick="openTab(event, 'stats')"> Global Stats </button>
+                        <button class="tabLink" onclick="openTab(event, 'meet')"> Meet the Mascots </button>
+                        <button class="tabLink" onclick="openTab(event, 'vids')"> Videos </button>
+                        <button class="tabLink" onclick="openTab(event, 'ref')"> References </button>
+                    <button class="scroll-arrow right" onclick="cycleTab(1)">&#10095;</button>
+            </div>
         </div>
         <div class="content">
             <div class="logo"> Math Day x SDG 4 </div>
             <p style="font-size: 80%;"> !!! Note that everything is subject to change !!! </p>
             <!-- About Section of Webpage -->
-            <div id="about" class="tab-content">
+            <div id="about" class="tab-content" style="display: block;">
                 <h2> Key Targets of SDG 4 </h2>
                 <h3> Free Education </h3>
                 <p> Primary and secondary education for all children by 2030. </p>                
@@ -28,22 +34,53 @@
                 <p> Ensuring youth globally achieve proficiency in reading and math. </p>
             </div>
             <!-- Stat Section of Webpage -->
-            <div id="stats" class="tab-content" style="display:none">
-                <h2> Stats </h2>
+            <div id="stats" class="tab-content" style="display: none;">
+                <h2> Global Stats </h2>
+            </div>
+            <!-- Meet section of Webpage -->
+            <div id="meet" class="tab-content" style="display: none;">
+                <h2> Meet the Mascots! </h2>
+            </div>
+            <!-- Videos section of Webpage-->
+            <div id="vids" class="tab-content" style="display: none;">
+                <h2> Videos </h2>
+            </div>
+            <!-- References section of Webpage-->
+            <div id="ref" class="tab-content" style="display: none;">
+                <h2> References </h2>
             </div>
             <hr>
             <p> Hey, You must be lost. This webpage is currently not finished! Come back when once its done! </p>
+            <!-- I'm actually pretty proud of this drawing.. Too bad you won't see it in the final product LMAO -->
             <img src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/Work%20in%20Progress%20Drawing.png" class="wipimg">
             <p style="font-size: 80%;"> !!! Note that everything is subject to change !!! </p>
-            <!-- Code that makes the tabs likeeee work lowkeyyy -->
+            <!-- THE Javascript section of the best webpage known to mankind -->
             <script>
-                function openTab(tabName) {
-                    var i;
-                    var x = document.getElementsByClassName("tab-content");
+                function openTab(evt, tabName) {
+                    var i, x, tabLinks;
+                    x = document.getElementsByClassName("tab-content");
                     for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
+                        x[i].style.display = "none";
+                    }
+                    tabLinks = document.getElementsByClassName("tabLink");
+                    for (i = 0; i < tabLinks.length; i++) {
+                        tabLinks[i].className = tabLinks[i].className.replace(" active", "");
                     }
                     document.getElementById(tabName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }
+
+                function cycleTab(direction) {
+                    var tabs = Array.from(document.getElementsByClassName("tabLink"));
+                    var activeIndex = tabs.findIndex(tab => tab.classList.contains("active"));
+                    var nextIndex = activeIndex + direction;
+                    if (nextIndex >= tabs.length) {
+                        nextIndex = 0;
+                    } else if (nextIndex < 0) {
+                        nextIndex = tabs.length - 1;
+                    }
+                    tabs[nextIndex].click();
+                    tabs[nextIndex].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
                 }
             </script>
         </div>
