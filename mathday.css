@@ -1,5 +1,9 @@
+html {
+	cursor: url("https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/SmallerDefaultCursor.png"), default;
+}
+
 body {
-	background-image: url('https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/Background.png');
+	background-image: url('https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/NewBackground.png');
 	background-repeat: repeat;
 	background-attachment: fixed;
 	background-size: 25% auto;
@@ -19,6 +23,10 @@ body {
 	border-width: 10%;
 	border-color: #099f1b;
 	border-radius: 2%;
+}
+
+button {
+	cursor: url("https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/SmallerPointerCursor.png"), pointer;
 }
 
 .nav-container {
@@ -106,7 +114,19 @@ body {
 }
 
 .tabLink.active {
-	background-color: #5e0f0f
+	background-color: #5e0f0f;
+}
+
+.credits {
+	background-color: white;
+	color: black;
+	width: 50%;
+	margin: auto;
+
+	/* Border */
+	border-style: solid;
+	border-width: 10%;
+	border-color: black;
 }
 
 .wipimg {
