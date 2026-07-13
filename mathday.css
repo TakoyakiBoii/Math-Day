@@ -120,13 +120,12 @@ button {
 }
 
 .tabLink {
-	flex: 1 1 auto;
     text-align: center;
     color: white;
     background-color: #900D09;
 	width: 100%;
-	max-width: 120px;
-	min-width: 220px;
+	min-width: 100px;
+	max-width: 200px;
 	height: auto;
     margin: auto;
 	font-size: 1rem;
