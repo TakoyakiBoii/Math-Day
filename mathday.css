@@ -7,6 +7,7 @@ body {
 	background-repeat: repeat;
 	background-attachment: fixed;
 	background-size: 25% auto;
+	font-size: 1vw;
 }
 
 ::selection {
@@ -120,7 +121,6 @@ button {
 
 .tabLink {
 	flex: 1 1 0px;
-	font-size: clamp(15px, 2.5vw + 10px, 20px);
     text-align: center;
     color: white;
     background-color: #900D09;
@@ -129,6 +129,7 @@ button {
 	min-width: 0;
 	height: auto;
     margin: auto;
+	font-size: 140%;
 	padding: 10px 12px;
 	font-weight: bold;
 	white-space: nowrap;
@@ -148,14 +149,13 @@ button {
 	border-radius: 10%;
 }
 
-.tabLink:hover {
-	background-color: #ff3c3c;
-}
-
 .tabLink.active {
 	background-color: #5e0f0f;
 }
 
+.tabLink:hover {
+	background-color: #ff3c3c;
+}
 .credits {
 	background-color: white;
 	color: black;
