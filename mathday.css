@@ -7,7 +7,7 @@ body {
 	background-repeat: repeat;
 	background-attachment: fixed;
 	background-size: 25% auto;
-	font-size: 1vw;
+	font-size: 1rem;
 }
 
 ::selection {
@@ -120,16 +120,17 @@ button {
 }
 
 .tabLink {
-	flex: 1 1 0px;
+	flex: 1 1 auto;
     text-align: center;
     color: white;
     background-color: #900D09;
 	width: 100%;
-	max-width: 200px;
-	min-width: 0;
+	max-width: 120px;
+	min-width: 220px;
 	height: auto;
     margin: auto;
-	padding: 10px 12px;
+	font-size: 1rem;
+	padding: 14px 20px;
 	font-weight: bold;
 	white-space: nowrap;
 	overflow: hidden;
