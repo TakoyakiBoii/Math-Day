@@ -3,7 +3,7 @@ html {
 }
 
 body {
-	background-image: url('https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/NewBackground.png');
+	background-image: url('https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/PicnicPatternBackground.png');
 	background-repeat: repeat;
 	background-attachment: fixed;
 	background-size: 25% auto;
@@ -11,8 +11,28 @@ body {
 }
 
 ::selection {
-	background-color: #099f1b;
+	background-color: #00ac5f;
 	color: white;
+}
+
+::-webkit-scrollbar {
+	width: auto;
+	background-color: #900D09;
+
+	/* Border */
+	border-style: solid;
+	border-width: 10%;
+	border-color: #fff696;
+	border-radius: 2%;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #fff696;
+	border-radius: 25%;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #ded785;
 }
 
 h1 {
@@ -33,16 +53,16 @@ p {
 
 a {
 	cursor: url("https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/SmallerPointerCursor.png"), pointer;
-	color: #099f1b;
+	color: #00ac5f;
 	font-weight: bold;
 }
 
 a:visited {
-	color: #00ac5f
+	color: #1d8647
 }
 
 a:hover {
-	color: #3aed4f
+	color: #6dd6a7
 }
 
 a:active {
@@ -54,14 +74,14 @@ a:active {
     color: white;
     background-color: #900D09;
     min-width: 65%;
-    max-width: 65%;
+    max-width: 85%;
 	height: auto;
     margin: auto;
     
     /* Border */
 	border-style: solid;
 	border-width: 10%;
-	border-color: #099f1b;
+	border-color: #fff696;
 	border-radius: 2%;
 }
 
@@ -70,7 +90,7 @@ button {
 }
 
 .nav-container {
-    width: 65%;
+    width: 85%;
     margin: auto;
     display: flex;
     align-items: center;
@@ -82,14 +102,14 @@ button {
 .scroll-arrow {
 	position: absolute;
 	background-color: #900D09;
-	color: #0fdf27;
-	height: 35px;
-	width: 35px;
+	color: #fff696;
+	height: 50px;
+	width: 50px;
 
 	/* Border */
 	border-style: solid;
 	border-width: 10%;
-	border-color: #0fdf27;
+	border-color: #fff696;
 	border-radius: 50%;
 }
 
@@ -144,7 +164,7 @@ button {
     /* Border */
 	border-style: solid;
 	border-width: 10%;
-	border-color: #0fdf27;
+	border-color: #fff696;
 	border-radius: 10%;
 }
 
@@ -155,6 +175,13 @@ button {
 .tabLink:hover {
 	background-color: #ff3c3c;
 }
+
+.mascotimg {
+	min-width: 20%;
+	max-width: 50%;
+	height: auto;
+}
+
 .credits {
 	background-color: white;
 	color: black;
