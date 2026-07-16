@@ -11,8 +11,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap" rel="stylesheet">
     <body>
-        <img src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/SlightlyBetterMathLogo.png" style="width: 23%; display: block; margin: auto; margin-bottom: 10px;">
+        <img src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/SlightlyBetterMathLogo.png" loading="lazy" style="width: 23%; display: block; margin: auto; margin-bottom: 10px;">
         <!-- Button Tabs -->
         <div class="nav-container">
             <div class="tab-buttons">
@@ -20,7 +21,7 @@
                         <button class="tabLink active" onclick="openTab(event, 'about')"> About Us! </button>
                         <button class="tabLink" onclick="openTab(event, 'vids')"> Videos </button>
                         <button class="tabLink" onclick="openTab(event, 'mascots')"> Mascots </button>
-                        <button class="tabLink" onclick="openTab(event, 'games')"> Games </button>
+                        <button class="tabLink" onclick="openTab(event, 'behind')"> Behind the Scenes </button>
                         <button class="tabLink" onclick="openTab(event, 'ref')"> References & Credits </button>
                     <button class="scroll-arrow right" onclick="cycleTab(1)"> &#10095; </button>
             </div>
@@ -30,6 +31,7 @@
             <!-- About Section of Webpage -->
             <div id="about" class="tab-content" style="display: block;">
                 <h1> About Us! </h1>
+                <hr>
                 <h2> What is Amy's Learning Academy? </h2>
                 <p> Here at Amy's Learning Academy, we strive for learners to have a fun experience learning math, <br>
                     one of the hardest yet an essential part we need to learn in our lives. We want to encourage <br>
@@ -76,30 +78,99 @@
             <!-- Mascots section of Webpage -->
             <div id="mascots" class="tab-content" style="display: none;">
                 <h1> Meet the Mascots! </h1>
+                <hr>
+                <div class="ultimate-mascot-container">
+                    <div class="mascot-container">
+                        <img class="mascot-image" src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/AmyTheApple.png" loading="lazy">
+                    </div>
+                    <div class="mascot-description">
+                        <h2> Amy the Apple </h2>
+                        <p> <q>I'm always happy <br> 
+                            to help!</q> </p>
+                        <h3> Description: </h3>
+                        <p> Amy, the main star of this webpage, she's <br> 
+                            always so eager to teach others about the <br> 
+                            wonders of mathematics! She wishes to see <br>
+                            everybody have fun learning. Having a hard <br>
+                            time understanding math? Feel free to ask,  <br>
+                            she's always more than happy to assist you! </p>
+                    </div>
+                </div>
+                <div class="ultimate-mascot-container">
+                    <div class="mascot-container">
+                        <img class="mascot-image" src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/Worm.png" loading="lazy">
+                    </div>
+                    <div class="mascot-description">
+                        <h2> Wormer the Worm </h2>
+                        <p> <q>I'm just messing <br>
+                            around.</q> </p>
+                        <h3> Description: </h3>
+                        <p> Wormer is a big troublemaker, he likes <br>
+                            messing around with Amy and the others <br>
+                            by messing up equations, giving wrong <br>
+                            answers, and more things to mess with <br>
+                            the others. </p>
+                    </div>
+                </div>
             </div>
             <!-- Games Section of Webpage -->
-            <div id="games" class="tab-content" style="display: none;">
-                <h1> Games </h1>
+            <div id="behind" class="tab-content" style="display: none;">
+                <h1> Behind the Scenes </h1>
+                <hr>
+                <h2> Webpage Background </h2>
+                <p> Fun fact: Did you know? The background of this webpage had gone through multiple <br>
+                    versions before we decided to use the current one now. </p>
+                <div class="webpage-background-images">
+                    <img src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/OldWebpage.png" class="old-webpage-images" loading="lazy">
+                    <img src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/OldWebpage2.png" class="old-webpage-images" loading="lazy">
+                </div>
+                <div class="webpage-background-images">
+                    <img src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/OldWebpage3.png" class="old-webpage-images" loading="lazy">
+                    <img src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/OldWebpage4.png" class="old-webpage-images" loading="lazy">
+                </div>
+                <h2> Amy's Design </h2>
+                <p> Amy's color scheme was originally more vibrant than it is now, and her overalls <br>
+                    was supposed to be some kind of dress. </p>
+                <img src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/Amy%20the%20Apple.png" style="width: 300px;" loading="lazy">
+                <h2> Webpage Current Background </h2>
+                <p> The webpage's current background is actually just a square repeated over and <br>
+                    over again until it covers the whole screen! </p>
+                <img src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/PicnicPatternBackground.png" loading="lazy">
+                <h2> Inspiration </h2>
+                <p> The main vision for Amy's Learning Academy is that its supposed to look like <br>
+                    an edutainment website and a flash game from the 2000's, We also took inspiration <br>
+                    from a horror game named "Andy's Apple Farm" though the mascot isn't actually inspired <br>
+                    by Andy. Amy is an original character that I thought of. </p>
             </div>
             <!-- References & Credits section of Webpage-->
             <div id="ref" class="tab-content" style="display: none;">
                 <h1> References & Credits </h1>
+                <hr>
                 <h2> References: </h2>
-                <p> Font (Roboto Mono) from <a href="https://fonts.google.com/" target="_blank"> Google Fonts </a> </p>
+                <p> Font (Roboto Mono & Playwrite New Zealand) from <a href="https://fonts.google.com/" target="_blank"> Google Fonts </a> </p>
                 <p> Research from about me section from <a href="https://www.oecd.org/en/topics/student-performance-pisa.html" target="_blank"> OECD Student Performance (PISA) </a> </p>
                 <div class="credits">
                     <h2> Credits: </h2>
-                    <h3> Yangco - Lead Web Developer <br>
-                    Deray - Web Developer <br>
-                    Dimaiwat - Video Maker and Narrator <br>
-                    Victoriano - Video Editor <br>
-                    Relosa - Web Page Contents </h3>
+                    <h3> Yangco: </h3>
+                    <p><b> Lead Web Developer <br>
+                    Some assets of the webpage <br>
+                    Some content for About Us </b></p>
+                    <h3> Deray: </h3>
+                    <p><b> Web Developer <br>
+                    Content of Mission and Vision </b></p>
+                    <h3> Dimaiwat: </h3>
+                    <p><b> Video Maker <br>
+                    Video Editor </b></p>
+                    <h3> Victoriano: </h3>
+                    <p><b> Webpage Logo </b></p>
+                    <h3> Relosa: </h3>
+                    <p><b> Research for About Us </b></p>
                 </div>
             </div>
             <hr>
             <p> Hey, You must be lost. This webpage is currently not finished! Come back once its done! </p>
             <!-- I'm actually pretty proud of this drawing.. Too bad you won't see it in the final product LMAO -->
-            <img src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/Work%20in%20Progress%20Drawing.png" class="wipimg">
+            <img src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/Work%20in%20Progress%20Drawing.png" class="wipimg" loading="lazy">
             <p style="font-size: 80%;"> !!! Note that everything is subject to change !!! </p>
             <!-- THE Javascript section of the best webpage known to mankind -->
             <script>

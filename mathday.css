@@ -18,17 +18,18 @@ body {
 ::-webkit-scrollbar {
 	width: auto;
 	background-color: #900D09;
+	width: 15px;
 
 	/* Border */
 	border-style: solid;
-	border-width: 10%;
+	border-width: 2px;
 	border-color: #fff696;
-	border-radius: 2%;
+	border-radius: 100px;
 }
 
 ::-webkit-scrollbar-thumb {
 	background: #fff696;
-	border-radius: 25%;
+	border-radius: 200px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -49,6 +50,11 @@ h3 {
 
 p {
 	font-family: "Roboto Mono", monospace;
+}
+
+q {
+	font-size: 1.8rem;
+	font-family: "Playwrite NZ", cursive;
 }
 
 a {
@@ -80,7 +86,7 @@ a:active {
     
     /* Border */
 	border-style: solid;
-	border-width: 10%;
+	border-width: 2px;
 	border-color: #fff696;
 	border-radius: 2%;
 }
@@ -108,7 +114,7 @@ button {
 
 	/* Border */
 	border-style: solid;
-	border-width: 10%;
+	border-width: 2px;
 	border-color: #fff696;
 	border-radius: 50%;
 }
@@ -163,7 +169,7 @@ button {
 
     /* Border */
 	border-style: solid;
-	border-width: 10%;
+	border-width: 2px;
 	border-color: #fff696;
 	border-radius: 10%;
 }
@@ -176,10 +182,56 @@ button {
 	background-color: #ff3c3c;
 }
 
-.mascotimg {
-	min-width: 20%;
-	max-width: 50%;
-	height: auto;
+.ultimate-mascot-container {
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+
+.mascot-container {
+	background-color: white;
+	height: 400px;
+	width: 300px;
+
+	/* Border */
+	border-style: solid;
+	border-width: 5px;
+	border-color: #fff696;
+	border-radius: 20px;
+}
+
+.mascot-image {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.mascot-description {
+	background-color: #900D09;
+	height: 400px;
+	width: 450px;
+
+	/* Border */
+	border-style: solid;
+	border-width: 2px;
+	border-color: #fff696;
+	border-radius: 20px;
+}
+
+.webpage-background-images {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	margin-bottom: 10px;
+}
+
+.old-webpage-images {
+	width: 500px;
 }
 
 .credits {
@@ -190,7 +242,7 @@ button {
 
 	/* Border */
 	border-style: solid;
-	border-width: 10%;
+	border-width: 5px;
 	border-color: black;
 }
 
