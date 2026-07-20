@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap" rel="stylesheet">
     <body>
-        <img src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/SlightlyBetterMathLogo.png" loading="lazy" style="width: 23%; display: block; margin: auto; margin-bottom: 10px;">
+        <img id="top" src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/SlightlyBetterMathLogo.png" loading="lazy" style="width: 23%; display: block; margin: auto; margin-bottom: 10px;">
         <!-- Button Tabs -->
         <div class="nav-container">
             <div class="tab-buttons">
@@ -21,17 +21,41 @@
                         <button class="tabLink active" onclick="openTab(event, 'about')"> About Us! </button>
                         <button class="tabLink" onclick="openTab(event, 'vids')"> Videos </button>
                         <button class="tabLink" onclick="openTab(event, 'mascots')"> Mascots </button>
-                        <button class="tabLink" onclick="openTab(event, 'behind')"> Behind the Scenes </button>
+                        <button class="tabLink" onclick="openTab(event, 'behind')"> BTS </button>
                         <button class="tabLink" onclick="openTab(event, 'ref')"> References & Credits </button>
                     <button class="scroll-arrow right" onclick="cycleTab(1)"> &#10095; </button>
             </div>
         </div>
         <div class="content">
-            <p style="font-size: 80%;"> !!! Note that everything is subject to change !!! </p>
+            <!-- Goodgame guyz I should've just used AI lmaooooooooooo -->
+            <img class="Amy-Peeking" src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/AmyPeeking.png">
+            <img class="Bob-Peeking" src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/LightbulbPeeking.png">
+            <br>
+            <div class="wormer-phone-ultimate-container">
+                <h2 style="text-align: left; padding-left: 20px;"> Uh oh! </h2>
+                <div class="wormer-phone-container">
+                    <div class="wormer-phone-img-container">
+                        <img class="wormer-phone-img" src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/WormerPhone.png">
+                    </div>
+                    <div class="wormer-phone-description">
+                        <p> Looks like Wormer messed something up with <br>
+                            the code! This webpage is viewed best in <br>
+                            larger screens like tablets, laptops, and <br>
+                            PC's! Sorry for the inconvenience mobile <br>
+                            users.  </p>
+                    </div>
+                </div>
+            </div>
             <!-- About Section of Webpage -->
             <div id="about" class="tab-content" style="display: block;">
                 <h1> About Us! </h1>
                 <hr>
+                <p> New to this webpage? Come watch our introduction video! Have fun browsing our webpage. </p>
+                <video width="650" height="auto" controls>
+                    <source src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/IntroductionVideo.mp4" type="video/mp4">
+                </video>
+                <p> <q>Where entertainment and education <br>
+                works in tandem!</q> </p>
                 <h2> What is Amy's Learning Academy? </h2>
                 <p> Here at Amy's Learning Academy, we strive for learners to have a fun experience learning math, <br>
                     one of the hardest yet an essential part we need to learn in our lives. We want to encourage <br>
@@ -70,15 +94,37 @@
                     <br>
                     SDG 4 actually has 8 main targets, you can see them on <br>
                     this site here → <a href="https://sdgs.un.org/goals/goal4#targets_and_indicators" target="_blank"> SDG 4: Quality Education </a> </p>
+                    <!-- Hai guys kita nyo ba to -->
             </div>
             <!-- Videos section of Webpage-->
             <div id="vids" class="tab-content" style="display: none;">
                 <h1> Videos </h1>
+                <hr>
+                <h2> Introduction Video </h2>
+                <p> Come watch our introduction video! We wish you the best of luck in your math <br>
+                    journey, never give up and learning! Lots of love from the people behind Amy's <br>
+                    Learning Academy. </p>
+                <video width="650" height="auto" controls>
+                    <source src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/IntroductionVideo.mp4" type="video/mp4">
+                </video>
+                <h2> Addition Video </h2>
+                <p> Check out this video created by Foss. In this video you should learn how to add <br>
+                    and the anatomy of expressions! Thank Foss for going out of his way to record <br>
+                    a video. </p>
+                <video width="450" height="auto" controls>
+                    <source src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/Addition.mp4" type="video/mp4">
+                </video>
+                <p> Looks like there's no more videos to watch, go check out the other tabs of <br>
+                    this webpage! </p>
+                <img src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/Cloud.png" style="width: 250px;">
             </div>
             <!-- Mascots section of Webpage -->
             <div id="mascots" class="tab-content" style="display: none;">
                 <h1> Meet the Mascots! </h1>
                 <hr>
+                <!-- This part wasn't rushed I swear.. -->
+                <p> There's five total mascots on this webpage, <br>
+                    come meet them one by one! </p>
                 <div class="ultimate-mascot-container">
                     <div class="mascot-container">
                         <img class="mascot-image" src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/AmyTheApple.png" loading="lazy">
@@ -98,6 +144,38 @@
                 </div>
                 <div class="ultimate-mascot-container">
                     <div class="mascot-container">
+                        <img class="mascot-image" src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/Lightbulb.png" loading="lazy">
+                    </div>
+                    <div class="mascot-description">
+                        <h2> Bob the Lightbulb </h2>
+                        <p> <q>Keep quiet, and <br>
+                            focus please.</q> </p>
+                        <h3> Description: </h3>
+                        <p> Bob is always so... Passionate when it comes <br>
+                            to teaching, especially teaching math. He <br>
+                            always seems so strict, but, deep down he's <br>
+                            not too bad! He just wants you to be able to <br>
+                            learn math properly. </p>
+                    </div>
+                </div>
+                <div class="ultimate-mascot-container">
+                    <div class="mascot-container">
+                        <img class="mascot-image" src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/Foss.png" loading="lazy">
+                    </div>
+                    <div class="mascot-description">
+                        <h2> Foss the Human? </h2>
+                        <p> <q>We just have to <br>
+                            keep trying!</q> </p>
+                        <h3> Description: </h3>
+                        <p> Foss is an awesome teacher, not as good as <br>
+                            Bob of course. He actually stars in one of <br>
+                            the videos in the videos tab of this webpage. <br>
+                            He's a human? Handpuppet? Its hard to tell, <br>
+                            not even the others really know what he is. </p>
+                    </div>
+                </div>
+                <div class="ultimate-mascot-container">
+                    <div class="mascot-container">
                         <img class="mascot-image" src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/Worm.png" loading="lazy">
                     </div>
                     <div class="mascot-description">
@@ -112,13 +190,31 @@
                             the others. </p>
                     </div>
                 </div>
+                <div class="ultimate-mascot-container">
+                    <div class="mascot-container">
+                        <img class="mascot-image" src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/CloudCharacter.png" loading="lazy">
+                    </div>
+                    <div class="mascot-description">
+                        <h2> Claudia the Cloud </h2>
+                        <p> <q>We can do it, <br>
+                            I swear!</q> </p>
+                        <h3> Description: </h3>
+                        <p> Claudia is very sharp! Though, <br>
+                            she's unfortunately super shy and <br>
+                            keeps to herself most of the time. <br>
+                            Her friends encourage her to get <br>
+                            out of her comfort zone once in a <br>
+                            while. </p>
+                            <!-- I'm gonna CRY some of the art looks so rushed (it is) -->
+                    </div>
+                </div>
             </div>
             <!-- Games Section of Webpage -->
             <div id="behind" class="tab-content" style="display: none;">
-                <h1> Behind the Scenes </h1>
+                <h1> Behind the Scenes & More </h1>
                 <hr>
                 <h2> Webpage Background </h2>
-                <p> Fun fact: Did you know? The background of this webpage had gone through multiple <br>
+                <p> Did you know? The background of this webpage had gone through multiple <br>
                     versions before we decided to use the current one now. </p>
                 <div class="webpage-background-images">
                     <img src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/OldWebpage.png" class="old-webpage-images" loading="lazy">
@@ -128,7 +224,7 @@
                     <img src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/OldWebpage3.png" class="old-webpage-images" loading="lazy">
                     <img src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/OldWebpage4.png" class="old-webpage-images" loading="lazy">
                 </div>
-                <h2> Amy's Design </h2>
+                <h2> Amy's Beta Design </h2>
                 <p> Amy's color scheme was originally more vibrant than it is now, and her overalls <br>
                     was supposed to be some kind of dress. </p>
                 <img src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/Amy%20the%20Apple.png" style="width: 300px;" loading="lazy">
@@ -139,39 +235,53 @@
                 <h2> Inspiration </h2>
                 <p> The main vision for Amy's Learning Academy is that its supposed to look like <br>
                     an edutainment website and a flash game from the 2000's, We also took inspiration <br>
-                    from a horror game named "Andy's Apple Farm" though the mascot isn't actually inspired <br>
-                    by Andy. Amy is an original character that I thought of. </p>
+                    from a horror game named "Andy's Apple Farm". We also took inspiration from another <br>
+                    website that's also in the horror genre named "Welcome Home" </p>
+                <h2> Mouse Cursor </h2>
+                <p> When viewed on PC/Laptop the cursor is actually different! For tablet and phone users <br>
+                    here is what the cursor looks like. </p>
+                <img src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/Cursor.png" style="width: 200px;" loading="lazy">
+                <h2> Work in Progress! </h2>
+                <p> While the webpage was in development I made a placeholder image in order to make <br>
+                    the webpage a little less empty and to tell those who visited the webpage early <br>
+                    that the webpage wasn't done yet. </p>
+                <img src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/Work%20in%20Progress%20Drawing.png" style="width: 500px;" loading="lazy">
+                <h2> Too Much Lines of Code </h2>
+                <p> This webpage actually has 600+ lines of code when adding up both the HTML and CSS files, <br>
+                    the web developers worked really hard on this webpage haha! </p>
+                <p> Wink wink nudge nudge.. </p>
             </div>
             <!-- References & Credits section of Webpage-->
             <div id="ref" class="tab-content" style="display: none;">
                 <h1> References & Credits </h1>
                 <hr>
-                <h2> References: </h2>
+                <h2> References & Credits: </h2>
                 <p> Font (Roboto Mono & Playwrite New Zealand) from <a href="https://fonts.google.com/" target="_blank"> Google Fonts </a> </p>
                 <p> Research from about me section from <a href="https://www.oecd.org/en/topics/student-performance-pisa.html" target="_blank"> OECD Student Performance (PISA) </a> </p>
+                <p> Drawings/Assets made with Krita, IbisPaintX, and Canva </p>
                 <div class="credits">
                     <h2> Credits: </h2>
-                    <h3> Yangco: </h3>
-                    <p><b> Lead Web Developer <br>
-                    Some assets of the webpage <br>
-                    Some content for About Us </b></p>
                     <h3> Deray: </h3>
                     <p><b> Web Developer <br>
-                    Content of Mission and Vision </b></p>
+                    Content of Mission and Vision <br>
+                    Voice Over for Main Video </b></p>
                     <h3> Dimaiwat: </h3>
                     <p><b> Video Maker <br>
                     Video Editor </b></p>
                     <h3> Victoriano: </h3>
-                    <p><b> Webpage Logo </b></p>
+                    <p><b> Webpage Logo <br>
+                    Main Video Script </b></p>
                     <h3> Relosa: </h3>
                     <p><b> Research for About Us </b></p>
+                    <h3> Yangco: </h3>
+                    <p><b> Lead Web Developer <br>
+                    Some Assets of the webpage <br>
+                    Some Content for About Us <br>
+                    Editor for Main Video <br>
+                    Some Parts of the Script for Main Video </b></p>
                 </div>
             </div>
-            <hr>
-            <p> Hey, You must be lost. This webpage is currently not finished! Come back once its done! </p>
-            <!-- I'm actually pretty proud of this drawing.. Too bad you won't see it in the final product LMAO -->
-            <img src="https://file.garden/Z_3yi196v1JJTjAw/Math%20Day%20Assets/Work%20in%20Progress%20Drawing.png" class="wipimg" loading="lazy">
-            <p style="font-size: 80%;"> !!! Note that everything is subject to change !!! </p>
+            <a href="#top"> <button class="back-to-top-button"> <p class="back-to-top-text"> Back to Top </p> </button> </a>
             <!-- THE Javascript section of the best webpage known to mankind -->
             <script>
                 function openTab(evt, tabName) {

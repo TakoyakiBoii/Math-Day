@@ -76,6 +76,8 @@ a:active {
 }
 
 .content {
+	position: relative;
+	z-index: 1;
     text-align: center;
     color: white;
     background-color: #900D09;
@@ -88,7 +90,27 @@ a:active {
 	border-style: solid;
 	border-width: 2px;
 	border-color: #fff696;
-	border-radius: 2%;
+	border-radius: 20px;
+}
+
+.Amy-Peeking {
+	z-index: 3;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translate(80px, -135px);
+	width: 100px;
+	height: auto;
+}
+
+.Bob-Peeking {
+	z-index: 3;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: translate(-80px, -145px);
+	width: 100px;
+	height: auto;
 }
 
 button {
@@ -99,6 +121,7 @@ button {
     width: 85%;
     margin: auto;
     display: flex;
+	justify-content: center;
     align-items: center;
     position: relative;
 	padding: 0 50px;
@@ -171,7 +194,7 @@ button {
 	border-style: solid;
 	border-width: 2px;
 	border-color: #fff696;
-	border-radius: 10%;
+	border-radius: 10px;
 }
 
 .tabLink.active {
@@ -180,6 +203,39 @@ button {
 
 .tabLink:hover {
 	background-color: #ff3c3c;
+}
+
+.wormer-phone-ultimate-container {
+	background-color: #500806;
+	width: 600px;
+	margin: auto;
+	overflow: hidden;
+
+	/* Border */
+	border-style: solid;
+	border-width: 3px;
+	border-color: #fff696;
+	border-radius:20px;
+}
+
+.wormer-phone-container {
+	background-color: #900D09;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.wormer-phone-img {
+	width: 150px;
+}
+
+.wormer-phone-description {
+	text-align: left;
+	align-self: flex-start;
+	padding-top: 5px;
+	padding-left: 10px;
 }
 
 .ultimate-mascot-container {
@@ -246,8 +302,24 @@ button {
 	border-color: black;
 }
 
-.wipimg {
-	min-width: 30%;
-	max-width: 50%;
-	height: auto;
+.back-to-top-button {
+	background-color: #900D09;
+	margin-bottom: 10px;
+	width: 200px;
+
+	/* Border */
+	border-style: solid;
+	border-width: 2px;
+	border-color: #fff696;
+	border-radius: 10px;
+}
+
+.back-to-top-button:hover {
+	background-color: #ff3c3c;
+}
+
+.back-to-top-text {
+	color: white;
+	font-size: 1rem;
+	text-decoration: none;
 }
