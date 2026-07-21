@@ -99,7 +99,7 @@ a:active {
 	top: 0;
 	left: 0;
 	transform: translate(80px, -135px);
-	width: 100px;
+	width: 6.5rem;
 	height: auto;
 }
 
@@ -109,7 +109,7 @@ a:active {
 	top: 0;
 	right: 0;
 	transform: translate(-80px, -145px);
-	width: 100px;
+	width: 6.5rem;
 	height: auto;
 }
 
@@ -282,12 +282,13 @@ button {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+	flex-wrap: wrap;
 	gap: 10px;
 	margin-bottom: 10px;
 }
 
 .old-webpage-images {
-	width: 500px;
+	width: 30rem;
 }
 
 .credits {
